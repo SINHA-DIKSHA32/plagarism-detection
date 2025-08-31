@@ -1,4 +1,4 @@
-# Plagarism Detection System using (project based learning)
+# Plagiarism Detection System using (project based learning)
 The plagiarism detection system was successfully developed to identify textual 
 similarities between multiple documents using a combination of a c-based 
 backend and a web-based frontend interface. the system performs efficient string 
