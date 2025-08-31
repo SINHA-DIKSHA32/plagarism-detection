@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plagiarism Detector System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f4f6f8; font-family: 'Segoe UI', sans-serif; }
+    .container { max-width: 1000px; margin-top: 60px; }
+    textarea { height: 250px; }
+    .result-box { background: #fff; border: 1px solid #ccc; padding: 10px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center mb-5">📄 <b>Plagiarism Checker</b></h2>
+
+    <textarea class="form-control mb-8" id="InputText" placeholder="Enter your text here..."></textarea>
+
+    <div class="d-flex gap-2 flex-wrap mb-5">
+      <button class="btn btn-primary" onclick="checkPlagiarism()"><h5><b>Check Plagiarism</h5><b></button>
+      <button class="btn btn-success" onclick="checkGrammar()"><h5><b>Grammar Checker<b><h5></button>
+      <button class="btn btn-secondary" onclick="countWord()"><h5><b>Word Counter<b><h5></button>
+         </div>
+
+    <div id="plagiarismResult" class="mb-3 text-success fw-semibold"></div>
+    <div id="wordCountDisplay" class="mb-3 text-success fw-semibold"></div>
+    <div id="grammarResult" class="mb-3 text-success fw-semibold"></div>
+
+    <hr/>
+    <h5><b>📤 Upload result.txt file manually:<b></h5>
+    <input type="file" id="fileUpload" accept=".txt" class="form-control mb-2" />
+    <h5><b>📥 Plagiarism percentage:</b></h5>
+   <h5> <div id="resultText" class="result-box"></div><h5>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
